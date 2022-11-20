@@ -1,4 +1,8 @@
 const palindromes = function (string) {
+    string = string.toLowerCase();
+    string = string.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,""); // https://stackoverflow.com/questions/4328500/how-can-i-strip-all-punctuation-from-a-string-in-javascript-using-regex
+
+    console.log(string);
     if (string.length === 1) return true;
 
     else if (string.length % 2 === 0) {
